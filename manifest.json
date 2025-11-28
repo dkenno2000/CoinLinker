@@ -1,0 +1,43 @@
+{
+  "name": "CoinLinker",
+  "description": "Converts SOL/BSC token addresses in X posts into quick links that open in Axiom/Gmgn/Padre. Links show info card on mouse hover.",
+  "version": "1.1",
+  "manifest_version": 3,
+  "icons": {
+    "128": "img/logo.png"
+  },
+  "action": {
+    "default_icon": { "128": "img/logo.png", "16": "img/logo.png", "48": "img/logo.png" },
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "js/service.js"
+  },
+  "host_permissions": [
+    "https://*.x.com/*",
+    "https://api.dexscreener.com/*",
+    "https://lite-api.jup.ag/*",
+    "https://*.four.meme/*",
+    "https://*.ipfs.io/*",
+    "https://*.cloudflare-ipfs.com/*",
+    "https://gateway.pinata.cloud/*",
+    "https://*.dweb.link/*",
+    "https://quicknode.quicknode-ipfs.com/*"
+  ],
+  "permissions": [ "storage"],
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["https://*.x.com/*"],
+      "js": ["src/x.js"],
+      "css": ["css/x.css"],
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["img/*.jpg", "img/*.png" ],
+      "matches": ["https://*.x.com/*"]
+    }
+  ]
+}

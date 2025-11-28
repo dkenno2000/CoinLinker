@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+
+<div class="conta">
+  <div class="chain-section header">
+    <div style="display: flex; justify-content: space-between;">
+      <h1>CoinLinker</h1>
+      <span id="footer">v1.1</span>
+    </div>
+    <hr>
+  	<span id="desc">Automatically converts token contract addresses (CA) in Twitter/X posts into links that open in <b>Axiom, Gmgn, or Padre</b>. <br>Each link also shows info popup on mouse hover.</span>
+  </div>
+  <div class="chain-section chain-bsc">
+  	<div style="display: flex; margin-bottom: 10px;">
+
+	<svg id="rem-xca-bsc-svg" viewBox="0 0 700 600" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+	  <style>.stb0 { fill: #F3BA2F; } .stb1 { fill: #131415; }</style>
+	  <circle class="stb0" cx="350" cy="300" r="230" />
+	  <path class="stb1" d="M406.3 320.8l34.8 34.7L346.5 450 252 355.5l34.8-34.7 59.7 59.7 59.8-59.7zm-59.8-59.8l35.3 35.3-35.3 35.3L311.3 296l9.2-9.2 25.3-25.8zm-119 0l34.8 34.8-34.8 34.7-34.8-34.7 34.8-34.8zm238 0l34.8 34.8-34.8 34.7-34.8-34.7 34.8-34.8zm-119-118.5l94.5 94.5-34.8 34.8-59.7-59.7-59.7 59.7L252 237l94.5-94.5z"/>
+	</svg>
+
+      <div class="chain-title">Open BSC tokens in:</div>
+    </div>
+
+    <div class="platform-buttons" id="bsc-buttons">
+      <div class="platform-btn" data-value="axiom">Axiom</div>
+      <div class="platform-btn" data-value="gmgn">GMGN</div>
+      <div class="platform-btn" data-value="padre">Padre</div>
+    </div>
+  </div>
+
+  <div class="chain-section chain-sol">
+  	<div style="display: flex; margin-bottom: 10px;">
+
+	<svg id="rem-xca-sol-svg" viewBox="0 0 600 300" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+	  <style>.sts0 { fill: url(#SVGSOL1); } .sts1 { fill: url(#SVGSOL2); } .sts2 { fill: url(#SVGSOL3); }</style>
+	  <defs>
+	    <linearGradient id="SVGSOL1" gradientUnits="userSpaceOnUse" x1="360.8791" y1="351.4553" x2="141.213" y2="-69.2936" gradientTransform="matrix(1 0 0 -1 0 314)">
+	      <stop offset="0" style="stop-color:#00FFA3"/>
+	      <stop offset="1" style="stop-color:#DC1FFF"/>
+	    </linearGradient>
+	    <linearGradient id="SVGSOL2" gradientUnits="userSpaceOnUse" x1="264.8291" y1="401.6014" x2="45.163" y2="-19.1475" gradientTransform="matrix(1 0 0 -1 0 314)">
+	      <stop offset="0" style="stop-color:#00FFA3"/>
+	      <stop offset="1" style="stop-color:#DC1FFF"/>
+	    </linearGradient>
+	    <linearGradient id="SVGSOL3" gradientUnits="userSpaceOnUse" x1="312.5484" y1="376.688" x2="92.8822" y2="-44.061" gradientTransform="matrix(1 0 0 -1 0 314)">
+	      <stop offset="0" style="stop-color:#00FFA3"/>
+	      <stop offset="1" style="stop-color:#DC1FFF"/>
+	    </linearGradient>
+	  </defs>
+	  <g transform="translate(100,0)">
+	    <path class="sts0" d="M64.6 237.9c2.4-2.4 5.7-3.8 9.2-3.8h317.4c5.8 0 8.7 7 4.6 11.1l-62.7 62.7c-2.4 2.4-5.7 3.8-9.2 3.8H6.5c-5.8 0-8.7-7-4.6-11.1l62.7-62.7z"/>
+	    <path class="sts1" d="M64.6 3.8C67.1 1.4 70.4 0 73.8 0h317.4c5.8 0 8.7 7 4.6 11.1l-62.7 62.7c-2.4 2.4-5.7 3.8-9.2 3.8H6.5c-5.8 0-8.7-7-4.6-11.1L64.6 3.8z"/>
+	    <path class="sts2" d="M333.1 120.1c-2.4-2.4-5.7-3.8-9.2-3.8H6.5c-5.8 0-8.7 7-4.6 11.1l62.7 62.7c2.4 2.4 5.7 3.8 9.2 3.8h317.4c5.8 0 8.7-7 4.6-11.1l-62.7-62.8z"/>
+	  </g>
+	</svg>
+
+      <div class="chain-title">Open Solana tokens in:</div>
+    </div>
+
+    <div class="platform-buttons" id="sol-buttons">
+      <div class="platform-btn" data-value="axiom">Axiom</div>
+      <div class="platform-btn" data-value="gmgn">GMGN</div>
+      <div class="platform-btn" data-value="padre">Padre</div>
+    </div>
+  </div>
+
+  <div class="chain-section footer">
+    <span id="footer">* Changes require page reload.</span><br>
+    <span id="footer">made by: d.kenno2000@gmail.com</span>
+  </div>
+</div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+  width: 270px;
+  padding: 14px;
+  background: #101020;
+  color: white;
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.chain-section {
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+#rem-xca-bsc-svg,
+#rem-xca-sol-svg {
+  width: 26px;
+  height: 26px;
+  margin-top: 2px;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+hr {
+  border: 1px solid rgba(56,175,210,0.15);
+  border-radius: 5px;
+}
+
+.chain-section.header {
+  border: 1px solid #73e1f130 !important;
+  background: rgba(56,175,210,0.05);
+  font-size: 11.3px;
+  font-weight: 400;
+  opacity: 0.9;
+  color: #eee;
+}
+
+span#desc {
+  color: #eee;
+  line-height: 17px;
+}
+
+.chain-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  opacity: 0.9;
+  margin-top: 5px;
+  margin-left: 8px; 
+}
+
+.chain-bsc {
+  border: 1px solid #d8b50040;
+  background: rgba(216, 181, 0, 0.05);
+}
+
+.chain-bsc .chain-title { color: #ccc; }
+
+.chain-sol {
+  border: 1px solid #c380ed55;
+  background: rgba(195, 128, 237, 0.05);
+}
+
+.chain-sol .chain-title { color: #ccc; }
+
+.platform-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.platform-btn {
+  flex: 1;
+  padding: 6px 5px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #222;
+  color: #ddd;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.15s;
+  text-align: center;
+  user-select: none;
+}
+
+.platform-btn:hover {
+  background: rgba(60,70,100,0.5);
+  border-color: rgba(100,180,200,0.2);
+}
+
+.platform-btn.active {
+  background: rgba(80,150,170, 0.7);
+  border-color: rgba(100,180,200, 1);
+  color: #fff;
+  font-weight: 600;
+}
+
+.chain-section.footer {
+  border: 1px solid #73e1f130 !important;
+  background: rgba(56,175,210,0.025);
+  font-size: 11px;
+  font-weight: 400;
+  opacity: 0.9;
+  color: #eee;
+  padding: 6px;
+  margin-bottom: 0;
+  text-align: end;
+}
+
+span#footer {
+  font-size: 9.5px;
+  color: #bbb;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.3);
+}

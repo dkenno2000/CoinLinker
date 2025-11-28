@@ -1,0 +1,185 @@
+@keyframes ca-spin { 100% { transform: rotate(360deg); } }
+.ca-spinner { box-sizing: border-box; }
+
+.ca-tooltip {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0;
+  transform: translateY(2px) !important;
+  scale: 1.1;
+}
+
+.ca-tooltip.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ca-tooltip #ca-tooltip-icon img {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.ca-tooltip #ca-tooltip-icon img.loaded {
+  opacity: 1;
+}
+
+.ca-link-icon svg {
+    width: 16px;
+    margin-left: 0px;
+    margin-right: 6px;
+    cursor: default;
+}
+
+a.ca-link {
+  color: rgb(180, 125, 235);
+  text-shadow: 0 0 1px rgba(180, 125, 235, 0.45);
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: -0.5px;
+  display: inline-block;
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  
+  direction: rtl;
+  text-align: left;
+}
+
+.ca-copy {
+    width: 12.5px !important;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    color: #bbb;
+}
+.ca-copy:hover {
+    color: #eee;
+}
+
+.ca-link-summary {
+  color: #bbb !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  cursor: default;
+  display: inline-block;
+  margin-bottom: -2px;
+}
+
+.ca-link-coin-name {
+  color: rgb(235,230,255);
+}
+
+.ca-link-mc {
+  filter: saturate(0.7) brightness(1.15);
+}
+
+.ca-tooltip {
+  min-width: 300px !important;
+  max-width: 420px !important;
+  padding: 14px !important;
+  margin-top: 29px;
+  margin-left: 16px;
+  background: rgba(30, 30, 38, 0.82) !important;
+  backdrop-filter: blur(4.5px);
+  border: 1px solid rgba(90,100,90,0.3);
+  color: #999 !important;
+  font-family: Helvetica, sans-serif;
+  box-shadow: 2px 4px 18px 8px #000000 !important;
+  cursor: default;
+}
+
+.ca-tooltip img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#ca-tooltip-icon {
+  background: none !important;
+  margin-left: -2px;
+}
+
+.ca-spinner {
+    background: none !important;
+}
+
+#rem-xca-ticker {
+  margin-top: 1px;
+  margin-left: 4px;
+  color: rgb(235,230,255);
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+#rem-xca-name {
+  color: rgb(220,230,215);
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 2px;
+  vertical-align: baseline !important;
+  display: inline-block;
+}
+
+#rem-xca-created {
+  color: #999;
+  font-size: 11px;
+  font-weight: 200;
+  margin-left: 4px;
+  display: inline-block;
+}
+
+#rem-xca-marketcap {
+  color: #ccc;
+  font-size: 11.5px;
+  font-weight: 700;
+  margin-left: 4px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#rem-xca-holders {
+  color: #bbb;
+  font-size: 11.5px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+#rem-xca-links {
+    padding-left: 6px !important;
+}
+
+#rem-xca-links svg {
+    width: 12.5px;
+}
+
+#rem-xca-links path {
+    fill: #ccc !important;
+}
+
+#rem-xca-links svg:hover path {
+    fill: #fff !important;
+}
+
+#rem-xca-stats {
+  color: #bbb;
+  font-size: 11.5px;
+  font-weight: 500;
+  margin-left: 4px;
+  display: inline-block;
+  letter-spacing: -0.6px;
+}
+
+#rem-xca-stats2 {
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-block;
+  margin-left: 4px;
+  letter-spacing: -0.6px;
+}
+
+#rem-xca-bsc-svg {
+    scale: 1.5;
+    margin-left: 6px;
+}
